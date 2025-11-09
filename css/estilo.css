@@ -1,0 +1,252 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+#home {
+  background:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('../img/academia-fundo.jpg') center center no-repeat;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  height: 100vh; 
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+
+#planos .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#planos .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+.btn-primary {
+  background-color: #0066ff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #004bcc;
+}
+
+
+footer a:hover {
+  color: #0d6efd;
+}
+
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+}
+
+
+section{
+  padding: 60px 0;
+}
+
+#sobre,
+#academias {
+  background-color: #f8f9fa; 
+}
+
+#sobre img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#planos {
+  background-color: #f7f7f7;
+}
+
+#planos .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+#planos .card:hover {
+  transform: translateY(-5px);
+}
+
+#planos .plano {
+  padding: 20px;
+}
+
+#planos .destaque {
+  background-color: #111; 
+}
+
+#planos h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#planos ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+
+#home h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+#home h4 {
+  color: #cfcfcf;
+  font-weight: 400;
+}
+
+#home .btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: all 0.3s;
+}
+
+#home .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+#home h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #f8f9fa;
+}
+
+#home h4 {
+  color: #e0e0e0;
+  font-weight: 400;
+}
+
+#home .btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+#home .btn-warning:hover {
+  background-color: #ffb300;
+  transform: scale(1.05);
+}
+
+#home p {
+  margin-top: 1.5rem;
+  color: #d6d6d6;
+}
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+  #home h4 {
+    font-size: 1.1rem;
+  }
+}
+.navbar-scrolled{
+  background-color: rgb(44, 44, 44);
+}
+.carousel-card{
+  width: 100%;
+}
+
+footer h4{
+  margin-bottom: 1%;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;  
+}
+
+.card-carousel img{
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+}
+
+.card-carousel {
+  background: rgb(44, 44, 44);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+#carouselExampleIndicators {
+    padding-bottom: 50px; 
+}
+
+/* 2. Reposiciona as setas para a parte inferior e as alinha */
+.carousel-control-prev,
+.carousel-control-next {
+    /* Mantém 'position: absolute' para funcionar, mas o alinha ao 'bottom' */
+    position: absolute;
+    top: auto;
+    bottom: 0; 
+    
+    /* Remove a largura total padrão e define um tamanho */
+    width: 30px; 
+    height: 30px; 
+    
+    /* Garante visibilidade total e remove fundo/borda */
+    opacity: 1; 
+    background: none;
+    border: none;
+}
+
+/* Alinha o botão 'Previous' mais à esquerda */
+.carousel-control-prev {
+    left: 48%; /* Posiciona no centro-esquerdo */
+    transform: translateX(-100%); /* Ajuste fino para centralizar com o botão next */
+}
+
+/* Alinha o botão 'Next' mais à direita */
+.carousel-control-next {
+    right: 48%; /* Posiciona no centro-direito */
+    transform: translateX(100%); /* Ajuste fino */
+}
+
+
+/* 3. Define os ícones para a cor preta usando SVG inline */
+
+/* Ajuste específico para o ícone de 'previous' (seta para esquerda) */
+.carousel-control-prev-icon {
+    /* SVG preto para seta esquerda */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+/* Ajuste específico para o ícone de 'next' (seta para direita) */
+.carousel-control-next-icon {
+    /* SVG preto para seta direita */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
